@@ -1,38 +1,58 @@
-.App {
+* {
+  font-family: 'RocknRoll One', sans-serif;
+}
+.app__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(246, 189, 255)
+}
+
+.app__container input {
+  border: none;
+  height: 30px;
+  width: 200px;
   text-align: center;
+  outline: none;
+  border-radius: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  position: absolute;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputs__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 1px solid rgb(243, 162, 255);
+}
+
+.input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.input h1 {
+  position: inherit;
+  top: inherit;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secret {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .015;
 }
